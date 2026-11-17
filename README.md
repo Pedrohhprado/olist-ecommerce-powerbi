@@ -1,18 +1,18 @@
-# Olist: vendas, entregas e satisfação do cliente
+Olist: vendas, entregas e satisfação do cliente
 
 Dashboard em Power BI feito com a base pública da Olist (e-commerce brasileiro, 2016 a 2018), com cerca de 99 mil pedidos. Os dados passam por um banco PostgreSQL antes de chegar ao Power BI. É o meu primeiro projeto de portfólio na área de dados.
 
 <img width="1366" height="766" alt="Dashboard" src="https://github.com/user-attachments/assets/3356a327-61b0-4080-95e7-a30c5f06382f" />
 
 
- O que o dashboard responde
+ O que o dashboard responde:
 
 1. Como o faturamento evoluiu ao longo do tempo?
 2. Quais categorias vendem mais?
 3. Qual é a taxa de atraso nas entregas e onde ela é maior?
 4. Como os clientes avaliam as compras?
 
- Números gerais
+ Números gerais:
 
 | Indicador | Valor |
 |---|---|
@@ -67,10 +67,6 @@ VAR _PedidosAtrasados =
 RETURN
 DIVIDE(_PedidosAtrasados; [Total Entregues]; 0)
 ```
- Próximos passos
-
-- Comparar a nota média dos pedidos entregues no prazo com a dos atrasados, para saber se o atraso derruba a avaliação.
-- Investigar por que o Nordeste concentra os atrasos.
 
 Fonte: [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce), no Kaggle. Os arquivos de dados não estão neste repositório: baixe no Kaggle para reproduzir.
 
